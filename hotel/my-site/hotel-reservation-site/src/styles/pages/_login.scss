@@ -1,0 +1,40 @@
+.login{
+    &-container{
+        display: flex;
+        justify-content: center;
+        &__info{
+            width:20%;
+            @include column-flex;
+            justify-content: flex-start;
+            text-align: center;
+            @extend .p-30;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #eee, 0 0 10px $light-gray-color;
+            &--logo{
+                height: 50px;
+            }
+            .title{
+                color: $orange-color;
+            }
+            .input{
+                border: none !important;
+                outline: none;
+                border-bottom:1px solid $light-gray-color !important;
+            }
+        }
+        &__img{
+            border-radius: 5px;
+            box-shadow: 0 0 10px #eee, 0 0 10px $light-gray-color;
+        }
+    }
+
+    .top-menu{
+        background-color: $white-color;
+        a{
+            color: $orange-color;
+        }
+    }
+    .header{
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+}
